@@ -1,0 +1,154 @@
+.skills__menu-wrapper{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+	justify-content: center;
+	padding: 2em 2em ;
+
+}
+.skills__menu{
+	margin: 1em;
+
+}
+.skills__icon{
+	margin-right: 10px;
+	width: var(--sz-2xl);
+}
+.skills__menu li{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	list-style: none;
+	border: 1px solid var(--clr-grey);
+	border-radius: 5px;
+	font-size: var(--sz-xs);
+	padding: 1em;
+	margin: 1em 0;
+	background: var(--clr-grey2);
+	box-shadow: 1px 1px 10px var(--clr-dark);
+
+}
+.skills__subtitle{
+	font-size: var(--sz-sm);
+	color: var(--clr-blue);
+	font-weight: 500;
+}
+.skills__title{
+	font-size: var(--sz-3xl);
+}
+
+
+.hidden{
+	opacity: 0;
+	filter-blur: 5px;
+	transform: translateY(-100px);
+	transition: all .2s;
+}
+.show{
+	filter-blur: 0;
+	transform: translateY(0);
+	opacity: 1;
+}
+.skills__li-hid:nth-child(2){
+	transition-delay: .2s;
+
+}
+.skills__li-hid:nth-child(3){
+	transition-delay: .4s;
+
+}
+.skills__li-hid:nth-child(4){
+	transition-delay: .6s;
+
+}
+
+
+.skills__line {
+	color: var(--clr-light);
+	margin-left: 3px;
+    width: 10%;
+    border: none;
+    border-top: 2px solid var(--clr-grey); /* Customize the color and thickness */
+}
+.skills__line-wrapper{
+	 display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/*--------------responsive-----------------------*/
+
+/*xs*/
+@media (min-width: 475px){
+	.skills__icon{
+		margin-right: 10px;
+		width: var(--sz-4xl);
+	}
+	.skills__menu li{
+		font-size: var(--sz-sm);
+	}
+}
+
+/*sm*/
+@media (min-width: 640px){
+	.skills__menu-wrapper{
+		width: 85%;
+		margin: 0 auto;
+
+	}
+}
+
+/*md*/
+@media (min-width: 768px){
+	.skills__menu-wrapper{
+		width: 100%;
+	}
+	.skills__menu{
+			margin: 1em;
+
+		}
+}
+
+/*lg*/
+@media (min-width: 1024px){
+	.skills__menu-wrapper{
+		grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+		
+	}
+	.skills__menu{
+		margin: 2em 3em;
+
+	}
+	.skills__menu li{
+		font-size: var(--sz-base);
+	}
+	.skills__title{
+		font-size: var(--sz-4xl);
+	}
+	.skills__subtitle{
+		font-size: var(--sz-base);
+	}
+
+}
+
+/*xl*/
+@media (min-width: 1280px){
+	.skills__menu-wrapper{
+		grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+		padding: 2em 0 ;
+		margin: 7em 0;
+
+
+	}
+	.skills__menu{
+		margin: 1em;
+
+	}
+	
+}
+
+/*2xl */
+/*@media (min-width: 1536px){
+
+}
+*/

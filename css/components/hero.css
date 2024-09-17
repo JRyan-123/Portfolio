@@ -1,0 +1,267 @@
+
+.hero{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	text-align: center;
+	user-select: none;
+
+}
+
+.anime{
+	opacity: 1;
+	transform: translateY(0px);
+	animation: slideup .7s forwards;
+	animation-delay: calc(.1s * var(--i));
+}
+@keyframes slideup{
+   from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+.hero__img{
+	width: var(--sz-6xl);
+	height: var(--sz-6xl);
+	border-radius: 50%;
+	box-shadow: 2px 2px 14px rgba(26, 26, 26, .7);
+
+}
+
+.hero__title{
+	font-size: var(--sz-4xl);
+
+}
+
+
+.hero__subtitle{
+	font-size: var(--sz-2xl);
+	color: var(--clr-grey);
+
+}
+
+.hero__desc{
+	font-size: var(--sz-xxs);
+	width: 40ch;
+    }
+
+
+.hero__btn{
+	text-decoration: none;
+
+}
+.hero__btn-wrapper{
+
+	display: flex;
+	gap: 2em;
+}
+.hero__icon-wrapper{
+	overflow: hidden;
+	width: 100%;
+}
+
+.hero__icon{
+	color: inherit;
+	text-decoration: none; 
+	font-size: var(--sz-xl);
+	margin: 1em .2em;
+	transition: transform 1s ease;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.hero__icon::after{
+	position: absolute;
+	font-family: 'Clash Display', sans-serif;
+	font-weight: 500;
+	left: 100%; 
+	top: 50%;	
+	font-size: var(--sz-xxs);
+	white-space: nowrap;
+	opacity: 0;
+	visibility: hidden;
+
+	padding: 5px;
+
+	transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.hero__icon:hover::after{
+	opacity: 1;
+ 	visibility: visible;
+	transform: translateY(-50%) translateX(2px); /* Adjust for smooth appearance */
+}
+
+.fb::after{
+	content: "JRyan Acosta";	
+}
+
+.gh::after{
+	content: "JRyan-123";
+
+}
+.gml::after{
+	content: "acostajoseryan4@gmail.com";
+
+}
+.num::after{
+	content: "+639308116912";
+}
+.in::after{
+	content: "Jose Ryan Acosta";
+
+
+}
+.loc::after{
+	content: "Metro Manila, PH";
+}
+.hero__icon:hover,
+.hero__icon:has( + :hover),
+.hero__icon:has(+ * + :hover),
+.hero__icon:has(+ * + * + :hover),
+.hero__icon:has(+ * + * + * + :hover),
+.hero__icon:has(+ * + * + * + * + :hover){
+	transform: translateX(-40px);
+}
+
+.hero__icon:hover + * , 
+.hero__icon:hover + * + *,
+.hero__icon:hover + * + * + *,
+.hero__icon:hover + * + * + * + *,
+.hero__icon:hover + * + * + * + * + *
+{
+	
+	transform: translateX(40px);
+}
+button{
+	font-size: var(--sz-xs);
+}
+
+
+/*--------------responsive-----------------------*/
+
+/*xs*/
+@media (min-width: 475px){
+		.hero__img{
+			width: var(--sz-7xl);
+			height: var(--sz-7xl);
+		}
+
+		.hero__title{
+			font-size: var(--sz-5xl);
+			
+		}
+
+		.hero__subtitle{
+			font-size: var(--sz-3xl);
+		}
+
+		.hero__desc{
+			font-size: var(--sz-xs);
+			width: 45ch;
+		}
+
+	
+		.hero__icon::after{
+			font-size: var(--sz-xs);
+		}
+
+		button{
+			font-size: var(--sz-sm);
+		}
+		.hero__icon:hover,
+		.hero__icon:has( + :hover),
+		.hero__icon:has(+ * + :hover),
+		.hero__icon:has(+ * + * + :hover),
+		.hero__icon:has(+ * + * + * + :hover),
+		.hero__icon:has(+ * + * + * + * + :hover){
+			transform: translateX(-75px);
+		}
+
+		.hero__icon:hover + * , 
+		.hero__icon:hover + * + *,
+		.hero__icon:hover + * + * + *,
+		.hero__icon:hover + * + * + * + *,
+		.hero__icon:hover + * + * + * + * + *
+		{
+	
+			transform: translateX(75px);
+		}
+
+}
+
+/*sm*/
+@media (min-width: 640px){
+
+		.hero__icon::after{
+			font-size: var(--sz-sm);
+		}
+}
+
+/*md*/
+/*@media (min-width: 768px){
+
+}*/
+
+/*lg*/
+@media (min-width: 1024px){
+		.hero{
+			gap: 1.4rem;	
+		}
+		.hero__img{
+			width: var(--sz-8xl);
+			height: var(--sz-8xl);
+		}
+
+		.hero__title{
+			font-size: var(--sz-6xl);
+			
+		}
+
+		.hero__subtitle{
+			font-size: var(--sz-4xl);
+		}
+
+		.hero__desc{
+			font-size: var(--sz-base);
+			width: 60ch;
+		}
+
+		.hero__icon{
+			font-size: var(--sz-3xl);
+			margin: 1em .2em;
+
+		}
+		.hero__icon::after{
+			font-size: var(--sz-base);
+		}
+
+		button{
+			font-size: var(--sz-base);
+		}
+ @keyframes typing {
+      from { width: 0; }
+      to { width: 60ch; }
+    }
+}
+
+/*xl*/
+@media (min-width: 1280px){
+
+.hero__title{
+	font-size: var(--sz-7xl);
+	
+}
+
+
+}
+
+/*2xl */
+/*@media (min-width: 1536px){
+
+}
+*/
+

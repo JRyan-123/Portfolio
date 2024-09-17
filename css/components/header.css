@@ -1,0 +1,154 @@
+
+
+.header__menu, 
+.header__logo-wrapper,
+.header__logo-p,
+.header__line,
+.header__sun
+{
+	display: none;
+}
+.header__sunbars-wrapper{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		font-size: var(--sz-2xl);
+		position: relative;
+		z-index: 2;
+	
+	}
+	.header__link{
+		display: inline-block;
+		text-decoration: none;
+		color: var(--clr-slt300);
+		padding: .4em;
+		border-radius: 7px;
+		transition: all .3s ease;
+	}
+
+	.header__link:hover{
+		color: var(--clr-grey3);
+		font-weight: 800;
+		background: var(--clr-grey);
+		padding: .4em;
+	}
+
+	.header__logo{
+		width: var(--sz-4xl);
+		height:  var(--sz-4xl);
+		opacity: 0;
+
+		animation: slideLeft 1s ease-out 1s forwards;         
+	}
+
+	.header__logo-wrapper{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 1em;
+		font-weight: 600;
+		user-select: none;
+
+	}
+
+	.header__line{
+		border-left: 1px solid var(--clr-slt300);
+	  	height: 36px;
+	  	opacity: 0;
+	  	animation: slideLeft 1s ease-out 1s forwards; 
+	  	
+	}
+
+
+
+
+/*--------------responsive-----------------------*/
+
+/*xs*/
+/*@media (min-width: 475px){
+
+}*/
+
+/*sm*/
+/*@media (min-width: 640px){
+
+}*/
+
+/*md*/
+@media (min-width: 768px){
+		.header__sun{
+		display: block;
+		transition: transform .8s ease;
+	}
+
+	.header__sun:hover{
+color: var(--clr-grey);
+		font-weight: 800;
+
+	}
+	.header nav{
+	display: grid;
+ 	grid-template-columns: 1fr auto 1fr;
+ 	padding-top: 1.2rem;
+
+	}
+	.header__menu{
+		display: flex;
+		gap: 2em;
+		list-style: none;
+		padding-top: .5em;
+
+	}
+
+	.header__bars{
+		display: none;
+	}
+
+	.header__logo-wrapper p{
+		opacity: 0;
+		animation: slideRight 1s ease-out 1s forwards;
+	}
+
+	@keyframes slideRight {
+      from {
+      	opacity: 0;
+        transform: translateX(-25%);
+      }
+      to {
+      	opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    @keyframes slideLeft {
+      from {
+      	opacity: 0;
+        transform: translateX(55%);
+      }
+      to {
+      	opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+
+}
+
+/*lg*/
+@media (min-width: 1024px){
+	.header__logo-p,
+	.header__line{
+		display: block;
+	}
+}
+
+/*xl*/
+/*@media (min-width: 1280px){
+
+}*/
+
+/*2xl */
+/*@media (min-width: 1536px){
+
+}
+*/
+

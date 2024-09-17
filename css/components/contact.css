@@ -1,0 +1,88 @@
+.contact{
+	
+}
+.contact__container{
+
+    display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	gap: 1.5em;
+}
+
+.contact__intro{
+	text-align: center;
+	margin-top: 5em;
+	font-size: var(--sz-xs);
+    width: 40ch;
+}
+.contact__title{
+
+	font-size: var(--sz-xxs);
+}
+.contact__title-icon{
+	display: flex;
+	align-items: center;
+	gap: .4em;
+}
+.contact__icon-wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	overflow-x: hidden;
+	width: 100%;
+
+}
+
+/*--------------responsive-----------------------*/
+
+/*xs*/
+@media (min-width: 475px){
+	.contact__intro{
+		font-size: var(--sz-sm);
+
+	    width: 40ch;
+	}
+	.contact__title{
+		font-size: var(--sz-base);
+	}
+}
+
+/*sm*/
+/*@media (min-width: 640px){
+
+}*/
+
+/*md*/
+/*@media (min-width: 768px){
+
+}*/
+
+/*lg*/
+@media (min-width: 1024px){
+
+	.contact__container{
+		padding: 5em 0;
+	}
+	.contact__intro{
+		font-size: var(--sz-base);
+
+	    width: 60ch;
+	}
+	.contact__title{
+		font-size: var(--sz-xl);
+	}
+
+}
+
+/*xl*/
+/*@media (min-width: 1280px){
+
+}*/
+
+/*2xl */
+/*@media (min-width: 1536px){
+
+}
+*/

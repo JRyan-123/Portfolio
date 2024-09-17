@@ -1,0 +1,156 @@
+
+.toggle-mode{
+
+	--clr-grey2:#FAFAFA;/*h txt*/
+	--clr-slt300:#131313;
+	--clr-grey3:#cbd5e1;/*txt*/
+	--clr-grey:#686868;/*light grey*/
+	--clr-dark:#424242;/**/
+	--clr-light:#292929;/*zinc grey*/
+
+	font-weight: 500;
+
+}
+.filter{
+	filter: invert(1) brightness(0) contrast(100%);
+}
+
+:root{
+
+/*color*/
+
+	--clr-light:#FAFAFA;/*h txt*/
+	--clr-dark:#131313;
+	--clr-slt300:#cbd5e1;/*txt*/
+	--clr-grey:#686868;/*light grey*/
+	--clr-grey2:#424242;/**/
+	--clr-grey3:#292929;/*zinc grey*/
+	--clr-red:#dc2626;/*red*/
+
+	--clr-blue:#0ea5e9;
+
+	/*text-shadow: 2px 2px 14px rgba(26, 26, 26, 1);*/
+
+/*size*/
+	
+	--sz-xxs: 0.5rem;/*.25*/
+	--sz-xs:0.75rem;
+	--sz-sm:0.875rem; /*.125*/
+	--sz-base: 1rem;
+	--sz-lg: 1.125rem;
+	--sz-xl:1.25rem;
+	--sz-2xl:1.5rem;/*.25*/
+	--sz-3xl:1.75rem;
+	--sz-4xl:2.25rem;/*.5*/
+	--sz-5xl:3rem;/*.75*/
+	--sz-6xl:3.75rem;
+	--sz-7xl:4.75rem;/*1*/
+	--sz-8xl:6rem;/*2*/
+	--sz-9xl:8rem;
+	--sz-10xl:10rem;
+}
+
+.icon {
+  color: #ff5733; /* Your desired color */
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+
+}
+
+body{
+	font-family: 'Clash Display', sans-serif;
+	background-color: var(--clr-grey3);
+	color: var(--clr-slt300);
+	font-weight: 500;
+	overflow-x: hidden;
+}
+svg,
+img,
+video,
+canvas{
+	display: block;
+	width: 100%;
+	user-select: none;
+}
+button {
+	
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: ;
+	padding: .5em 1em;
+	font-size: var(--sz-base);
+	color: #cbd5e1;
+	font-family: inherit;
+	border-radius: 1000px;
+	background: #131313;
+	position: relative;
+	transition: all .7s ease;
+	
+}
+
+
+
+button::before{
+	content: '';
+	position: absolute;
+	height: 107%;
+	width: 103%;
+	border-radius: 1000px;
+	background-image: linear-gradient(to right, #cbd5e1, #424242);
+	z-index: -1;
+	transition: all .7s ease;
+}
+
+button:hover::before {
+	height: 108%;
+	width: 104%;
+	background-image: linear-gradient(to right, #FAFAFA, #FAFAFA);
+	box-shadow: 2px 2px 14px rgba(26, 26, 26, 1);
+}
+
+button:hover{
+	color: #FAFAFA;
+	font-weight: 400;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    background-size: 200% 200%;
+    animation: gradientAnimation 400s ease infinite;
+    background-image: linear-gradient(to right, rgba(89, 89, 89, .07) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(89, 89, 89, .07) 1px, transparent 1px);
+    background-size:  250px 258px; /* Adjust this to control the size of the grid cells */
+    background-blend-mode: overlay;
+    z-index: -9999;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+.disabled_btn{
+	color: var(--clr-red);
+    cursor: not-allowed;
+}
