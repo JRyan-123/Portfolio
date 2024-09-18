@@ -17,7 +17,7 @@
 
 			<a class="hero__icon fb contact__title-icon" href="https://www.facebook.com/joseryan.acosta" target="_blank"><h2 class="contact__title">Connect with</h2><i class=' fa-brands fa-facebook'></i></a>
 
-			<a class="hero__icon gh"><i class=' fa-brands fa-github'></i></a>
+			<a class="hero__icon gh" target="_blank" href="https://github.com/JRyan-123"><i class=' fa-brands fa-github'></i></a>
 
 			<a class="hero__icon num" target="_blank"><i class="  fa-solid fa-mobile-screen-button"></i></a>
 
