@@ -4,16 +4,16 @@ const hideEls1 = document.querySelector('.about__sticky');
 const observer1 = new IntersectionObserver( (entries) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
-			hideEls.style.top = '-17%';
-			hideEls1.style.top = '-30%';
+			hideEls.style.height = '500px';
+			hideEls1.style.height= '400px';
 		}
 		else{
-			hideEls.style.top = '11%';
-			hideEls1.style.top = '30%';
+			hideEls.style.height = '0';
+			hideEls1.style.height = '0';
 		}
 	});
 });
-const detectSection = document.querySelector('.contact__icon-wrapper');
+const detectSection = document.querySelector('.about__last-img');
 if (detectSection) {
 	observer1.observe(detectSection);
 }

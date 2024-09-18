@@ -11,7 +11,7 @@
 	
 		<div class="about__sticky ">
 			<h4>Greetings!</h4>
-			<p>Hi there! I'm <span>Jose Ryan Acosta</span>  a recent graduate, Bachelor of Science in Information Technology at Cavite State University. My problem-solving skills led me to pick this field.</p>
+			<p>Hi there! I'm <span>Jose Ryan Acosta</span>  a recent graduate, <strong>Bachelor of Science in Information Technology</strong> at Cavite State University. My problem-solving skills led me to pick this field.</p>
 			<br>
 			<p>I really enjoyed backend-development throughout my time in college, which helped me build a strong foundation in web-development. Currently, Im exploring more technologies to enhance my skills. </p>
 			<br>
@@ -86,7 +86,7 @@
 				<img  src="img/about/lpenhs.jpg">
 					
 				</div>
-				<div class="about__event-txt">
+				<div class="about__event-txt about__last-img">
 					<h3 class="about__event-title">Las Pinas East National Highschool - EVA</h3>
 					<p class="about__event-desc"><span>Highschool</span></p>
 					<p class="about__event-desc">June 2012-March 2016</p>

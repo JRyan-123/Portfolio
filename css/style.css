@@ -70,6 +70,7 @@ body{
 	color: var(--clr-slt300);
 	font-weight: 500;
 	overflow-x: hidden;
+	 letter-spacing: .04rem;
 }
 svg,
 img,
