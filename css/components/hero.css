@@ -11,15 +11,16 @@
 }
 
 .anime{
-	opacity: 1;
-	transform: translateY(0px);
+	opacity: 0;
+	transform: translateY(150px);
 	animation: slideup .7s forwards;
 	animation-delay: calc(.1s * var(--i));
 }
+
 @keyframes slideup{
-   from {
-        transform: translateY(50px);
-        opacity: 0;
+   to {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
 

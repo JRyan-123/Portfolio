@@ -2,11 +2,11 @@
 <section class="hero container section" id="home">
 
 	<img class="hero__img anime" src="img/hero/hero.jfif" style="--i:1;">
-	<h3 class="hero__subtitle anime"  style="--i:2;">Hi! I'm Jose Ryan</h3>
+	<h3 class="hero__subtitle anime"  style="--i:3;">Hi! I'm Jose Ryan</h3>
 	
-	<h1 class="hero__title anime" style="--i:3;">ASPIRING FULLSTACK <br>WEB DEVELOPER</h1>
+	<h1 class="hero__title anime" style="--i:5;">ASPIRING FULLSTACK <br>WEB DEVELOPER</h1>
 	
-	<div class="hero__btn-wrapper anime"  style="--i:5;">
+	<div class="hero__btn-wrapper anime"  style="--i:4;">
 		<a class ="hero__btn" href="mailto:acostajoseryan4@gmail.com" target="_blank"> <button>Reach out</button></a>
 		<a class="hero__btn " href="https://drive.google.com/uc?export=download&id=1CVaxESr5aDvYkpR95gDQBM2j3VfEltqi" download ><button class="">Resume</button></a>
 	
