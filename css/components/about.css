@@ -13,12 +13,10 @@
 .about__sticky{
     font-size: var(--sz-xs);
     width: 40ch;
-    margin-top: 7rem;
      filter-blur: 0;
      letter-spacing: .04rem;
-
-    
     opacity: 1;
+
 }
 .about__event{
     position: relative;

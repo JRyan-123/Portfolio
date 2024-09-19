@@ -8,8 +8,8 @@ const observer1 = new IntersectionObserver( (entries) => {
 			hideEls1.style.height= '400px';
 		}
 		else{
-			hideEls.style.height = '0';
-			hideEls1.style.height = '0';
+			hideEls.style.height = '100px';
+			hideEls1.style.height = '200px';
 		}
 	});
 });
