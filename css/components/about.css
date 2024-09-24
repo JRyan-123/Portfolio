@@ -60,18 +60,8 @@
     font-size: var(--sz-xl);
     transition: all .5s ease;
 }
-.about__header{
-    filter-blur: 0;
 
 
-    opacity: 1;
-}
-.hide{
-    opacity: 0;
-    filter-blur: 5px;
-    transform: translateY(-100px);
-   
-}
 
 /*--------------responsive-----------------------*/
 
@@ -132,11 +122,7 @@
         left: 0;
         width: 60ch;
     }
-    .about__header{
-        position: sticky;
-        top: 15%;
-       
-    }
+
 }
 
 /*xl*/
